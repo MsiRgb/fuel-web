@@ -50,7 +50,7 @@ function(models, utils, commonViews, dialogViews, clustersPageTemplate, clusterT
             'click .create-cluster': 'createCluster'
         },
         createCluster: function() {
-            app.page.registerSubView(new dialogViews.CreateClusterWizard({collection: this.collection})).render();
+            /*app.page.registerSubView(new dialogViews.CreateClusterWizard({collection: this.collection})).render();*/
         },
         initialize: function() {
             this.collection.on('sync add', this.render, this);
